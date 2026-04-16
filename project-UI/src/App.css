@@ -1,0 +1,167 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  background: linear-gradient(to right, #000000, #0f3d3e);
+  color: white;
+  /* position: relative; */
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* LEFT */
+.hero-left {
+  max-width: 50%;
+  
+}
+
+.hero-left h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.hero-left span {
+  color: #f7c873;
+  text-decoration: underline wavy
+   #f7c873 ;
+  /* border-bottom: 4px solid ; */
+
+  padding-bottom: 4px;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(to right, #2ec4b6, #f7c873);
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #f7c873;
+  border-image: linear-gradient(to right, #2ec4b6, #f7c873) 1;
+  font-size: 20px;
+  color: white;
+ font-weight: bold;
+}
+
+/* RIGHT */
+.hero-right {
+  position: relative;
+}
+
+.hero-right img {
+  width: 350px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* FLOATING CARDS */
+.card {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(10px); */
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 5px 5px 10px gray;
+}
+
+.card h3 {
+  font-size: 20px;
+  color:  #34F5C5;
+}
+
+.card p {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+/* positions */
+.card1 {
+  top: 0;
+  right: -40px;
+}
+
+.card2 {
+  top: 120px;
+  left: -100px;
+}
+
+.card3 {
+  bottom: 0px;
+  right: -60px;
+}
+
+/* animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+@media (max-width:1000px) {
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* small screens */
+@media (max-width:660px) {
+  .hero-right img {
+    width: 250px;
+  }
+
+  .card {
+    display: none;
+  }
+}

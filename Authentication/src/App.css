@@ -1,0 +1,61 @@
+/* page center alignment */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* form box */
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* inputs */
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  width: 90%
+}
+
+/* input focus effect */
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
+
+/* button */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #357bd8;
+}
+
+/* message text */
+h2 {
+  font-size: 14px;
+  text-align: center;
+  color: green;
+}
